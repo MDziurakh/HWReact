@@ -1,5 +1,17 @@
 import './App.scss';
 import MyComponent from "./components/MyComponent/MyComponent";
+import Names from "./components/Names/Names";
+import { v4 as uuidv4 } from 'uuid';
+
+const namesArr =[
+    {name:"John", id:uuidv4()},
+    {name:'Joe', id:uuidv4()},
+    {name:'Baykar', id:uuidv4()},
+    {name:'Boris', id:uuidv4()},
+
+];
+
+
 
 
 function App() {
@@ -7,13 +19,13 @@ function App() {
     <div className="App">
         <div className='container'>
             <header>
-                <MyComponent text='Hi! I`m here!'/>
+
             </header>
             <main>
-                <MyComponent text='And here!'/>
+                <MyComponent />
             </main>
             <footer>
-                <MyComponent text='And here!'/>
+                <Names names={namesArr}/>
             </footer>
         </div>
     </div>
