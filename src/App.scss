@@ -1,8 +1,27 @@
 .App{
  background-color: lightblue;
-  height: 100vh;
-  p{
-    margin: 0;
-    text-align: center;
+  .container{
+    height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    header{
+      border: 1px solid gray;
+      display: flex;
+      justify-content: center;
+      height: 100px;
+    }
+    main{
+      margin: 10px 0;
+      border: 1px solid gray;
+      display: flex;
+      justify-content: center;
+      height: 400px;
+    }
+    footer{
+      border: 1px solid gray;
+      display: flex;
+      justify-content: center;
+      height: 100px;
+    }
   }
 }

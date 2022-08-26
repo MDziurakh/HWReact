@@ -1,11 +1,21 @@
 import './App.scss';
-import FirstSimpleComponent from "./components/FirstSimpleComponent/FirstSimpleComponent";
+import MyComponent from "./components/MyComponent/MyComponent";
+
 
 function App() {
   return (
     <div className="App">
-        <p>Hello world</p>
-        <FirstSimpleComponent src={'/images/meme.jpeg'} alt='alternative text' text='Hello! I`m text!'/>
+        <div className='container'>
+            <header>
+                <MyComponent text='Hi! I`m here!'/>
+            </header>
+            <main>
+                <MyComponent text='And here!'/>
+            </main>
+            <footer>
+                <MyComponent text='And here!'/>
+            </footer>
+        </div>
     </div>
   );
 }
