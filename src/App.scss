@@ -14,8 +14,14 @@
       margin: 10px 0;
       border: 1px solid gray;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
       height: 400px;
+      button{
+        height: 40px;
+        width: 200px;
+      }
     }
     footer{
       border: 1px solid gray;

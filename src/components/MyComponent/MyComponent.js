@@ -5,9 +5,9 @@ class MyComponent extends Component {
     render() {
         const text=this.props.text;
         return (
-            <span>
+            <p>
                 {text}
-            </span>
+            </p>
         );
     }
 }
