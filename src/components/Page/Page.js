@@ -17,8 +17,8 @@ class Page extends Component {
                         <MyComponent text='I`m here!' />
                     </header>
                     <main>
-                        <button> Click me! </button>
-
+                        <button onClick={()=>this.setState({visibility:!this.state.visibility})} > Click me! </button>
+                        {this.state.visibility && <ShowButton visibility={false} />}
                     </main>
                     <footer>
                         <MyComponent text='And here!' />

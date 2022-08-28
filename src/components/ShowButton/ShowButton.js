@@ -3,26 +3,20 @@ import './ShowButton.scss'
 
 class ShowButton extends Component {
 
-    state={
-        visibility:true
+
+    componentDidMount() {
+        alert('Компонент відкрився')
+    }
+
+    componentWillUnmount() {
+        alert('Компонент заховався')
     }
 
     render() {
-        if(this.state.visibility) {
-
             return (
                 <div className='show_el'>
-
                 </div>
             );
-        }
-        else {
-            return (
-                <div>
-                    nope
-                </div>
-            )
-        }
     }
 }
 
