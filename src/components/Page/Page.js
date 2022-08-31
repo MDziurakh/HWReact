@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import MyComponent from "../MyComponent/MyComponent";
-import ShowButton from "../ShowButton/ShowButton";
+import FormThreeInput from "../FormThreeInput/FormThreeInput";
+import FormTwoInput from "../FormTwoInput/FormTwoInput";
 
 class Page extends Component {
 
@@ -17,8 +18,8 @@ class Page extends Component {
                         <MyComponent text='I`m here!' />
                     </header>
                     <main>
-                        <button onClick={()=>this.setState({visibility:!this.state.visibility})} > Click me! </button>
-                        {this.state.visibility && <ShowButton visibility={false} />}
+                        <FormThreeInput/>
+                        <FormTwoInput/>
                     </main>
                     <footer>
                         <MyComponent text='And here!' />
