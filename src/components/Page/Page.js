@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import MyComponent from "../MyComponent/MyComponent";
-import FormThreeInput from "../FormThreeInput/FormThreeInput";
-import FormTwoInput from "../FormTwoInput/FormTwoInput";
+import FormValidation from "../FormValidation/FormValidation";
+// import FormThreeInput from "../FormThreeInput/FormThreeInput";
+// import FormTwoInput from "../FormTwoInput/FormTwoInput";
 
 class Page extends Component {
 
@@ -18,8 +19,9 @@ class Page extends Component {
                         <MyComponent text='I`m here!' />
                     </header>
                     <main>
-                        <FormThreeInput/>
-                        <FormTwoInput/>
+                        <FormValidation/>
+                        {/*<FormThreeInput/>*/}
+                        {/*<FormTwoInput/>*/}
                     </main>
                     <footer>
                         <MyComponent text='And here!' />

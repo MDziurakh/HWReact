@@ -1,0 +1,16 @@
+.validForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  input{
+    display: block;
+    margin: 20px 0;
+  }
+}
+.valid{
+  border: 5px solid green;
+}
+.invalid{
+  border: 5px solid red;
+}
